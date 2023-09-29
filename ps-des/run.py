@@ -13,7 +13,7 @@ datasets = ['appendicitis','australian','balance',
                   'vehicle','vehicle2','vowel','wdbc']
 for dataset_ in datasets:        
     begin = 0
-    end = 2
+    end = 30
     for run in range(begin,end):
         y_true, y_pred, y_pred_all, clf_sel, y_proba_list, des_list = ps_des.start(dataset_, run)            
         results = [y_true, y_pred, y_pred_all, clf_sel, y_proba_list, des_list]
